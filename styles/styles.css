@@ -227,6 +227,9 @@ a.certificates {
     margin: 20px 10px 0;
     background: url("../images/sponsors.png") top left no-repeat;
 }
+.sponsors li:hover {
+    background: url("../images/sponsors-hover.png") top left no-repeat;
+}
 .sponsors li.evangelia {
     width: 69px;
     height: 54px;
