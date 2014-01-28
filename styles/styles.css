@@ -1,0 +1,293 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            {
+    padding:0;
+    margin:0;
+    font: 12px Arial, Helvetica, sans-serif;
+    background: url("../images/background.png") repeat-x #fff;
+    color: #4B7589;
+}
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font: 15px Arial, Helvetica, sans-serif; color: #E11D5C; text-decoration:none; }
+a:hover                        { text-decoration:underline; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#header {
+    overflow: hidden;
+    height: 449px;
+    padding-top: 1px;
+    background: url("../images/circles-background.png") no-repeat center 145px;
+}
+h1 {
+    overflow: hidden;
+    float: left;
+    height: 71px;
+    width: 167px;
+    margin-top: 17px;
+}
+h2.ad {
+    text-align: center;
+    border-top: 1px solid #246987;
+    margin-top: 35px;
+    padding-top: 70px;
+
+    font: 53px "Trebuchet MS", Helvetica, sans-serif;
+    color: #246987;
+}
+#header a.reg {
+    display: block;
+    height: 78px;
+    width: 307px;
+    margin: 28px auto 0;
+    padding-top: 20px;
+    background:url("../images/reg-background.png") no-repeat -16px -2px;
+    text-align: center;
+    font: 26px "Trebuchet MS", Helvetica, sans-serif;
+    color: #ffffff;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#nav {
+    float: right;
+    margin-top: 45px;
+}
+#nav a {
+    font: bold 15px PT Sans, sans-serif;
+    text-transform: uppercase;
+    color: #396375;
+}
+#nav li {
+    float: left;
+    margin-left: 28px;
+}
+#nav li.active a, #nav li a:hover {
+    color: #E11D5C;
+}
+/*--------------------------------SOCIAL-LINKS-NAV----------------------------------*/
+.social-links-nav {
+    overflow: hidden;
+    margin-top: 44px;
+    text-align: center;
+}
+.social-links-nav li{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    margin-left: 3px;
+}
+.social-links-nav li:first-child {
+    margin-left: 0;
+}
+.social-links-nav li a{
+    display: block;
+    height: 100%;
+    text-indent: -9999px;
+}
+.social-links-nav li {
+    background:url("../images/social-links.png") no-repeat;
+}
+.social-links-nav li:hover {
+    background:url("../images/social-links-hover.png") no-repeat;
+}
+.vimeo {
+    background-position: -10px -10px !important;
+}
+.yt {
+    background-position: -10px -44px !important;
+}
+.tw {
+    background-position: -10px -78px !important;
+}
+.vk {
+    background-position: -10px -112px !important;
+}
+.fb {
+    background-position: -10px -146px !important;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+p.geekhub {
+    font-size: 15px;
+    width: 670px;
+    margin: 34px auto 0;
+}
+h3 {
+    margin: 20px 0 25px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #437183;
+    text-align: center;
+    font: 19px "Trebuchet MS", Helvetica, sans-serif;
+    color: #437183;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.courses li {
+    float: left;
+    width: 420px;
+    height: 195px;
+    padding-right: 27px;
+}
+.courses li img {
+    float: left;
+    padding: 15px;
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+    border: 2px dashed #577F90;
+    border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    behavior: url("/pie/PIE.htc");
+}
+h4 {
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.courses h4 a {
+    font: 28px "Trebuchet MS", Helvetica, sans-serif;
+    color: #E92777;
+}
+.courses p {
+    overflow: hidden;
+    line-height: 18px;
+}
+.courses li.last-child {
+    clear: right;
+}
+.fb-like-box {
+    float: left;
+    padding-top: 20px;
+}
+a.certificates {
+    display: block;
+    overflow: hidden;
+    height: 214px;
+    width: 276px;
+    margin: 0 auto;
+    background: url("../images/certificates.png") no-repeat top left;
+    text-indent: -9999px;
+}
+.sponsors {
+    float: right;
+    height: 214px;
+    width: 276px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.sponsors h3 {
+    margin: 11px 0 0;
+    font-size: 16px;
+    letter-spacing: 8px;
+}
+.sponsors li {
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px 10px 0;
+    background: url("../images/sponsors.png") top left no-repeat;
+}
+.sponsors li.evangelia {
+    width: 69px;
+    height: 54px;
+    background-position: -10px -10px;
+}
+.sponsors li.o {
+    width: 59px;
+    height: 47px;
+    background-position: -10px -74px;
+}
+.sponsors li.y {
+    width: 59px;
+    height: 44px;
+    background-position: -10px -131px;
+}
+.sponsors li.s {
+    width: 44px;
+    height: 44px;
+    background-position: -10px -185px;
+}
+.sponsors li.moc {
+    width: 72px;
+    height: 39px;
+    background-position: -10px -239px;
+}
+.sponsors li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#footer {
+    clear: both;
+    min-height: 60px;
+    padding-top: 15px;
+    border-top: 1px solid #437183;
+}
+#footer a {
+    font: bold 11px Arial, sans-serif;
+    text-transform: uppercase;
+    color: #396375;
+}
+#footer li {
+    float: left;
+    margin-left: 21px;
+}
+#footer li:first-child {
+    margin: 0;
+}
+#footer li.active a, #footer li a:hover {
+    color: #E11D5C;
+}
+#footer span {
+    float: right;
+    font: 11px Arial, sans-serif;
+    color: #A7C3CF;
+}
