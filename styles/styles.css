@@ -6,7 +6,7 @@ body                            {
     padding:0;
     margin:0;
     font: 12px Arial, Helvetica, sans-serif;
-    background: url("../images/background.png") repeat-x #fff;
+    background: #fff;
     color: #4B7589;
 }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
@@ -44,16 +44,18 @@ a:hover                        { text-decoration:underline; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-#wrapper {
+#wrapper, #header {
     width: 900px;
     margin: 0 auto;
+}
+#header-wrap {
+    background: url("../images/background.png") repeat-x bottom;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 #header {
     overflow: hidden;
-    height: 449px;
     padding-top: 1px;
     background: url("../images/circles-background.png") no-repeat center 145px;
 }
@@ -69,15 +71,14 @@ h2.ad {
     border-top: 1px solid #246987;
     margin-top: 35px;
     padding-top: 70px;
-
     font: 53px "Trebuchet MS", Helvetica, sans-serif;
     color: #246987;
 }
 #header a.reg {
     display: block;
-    height: 78px;
+    height: 58px;
     width: 307px;
-    margin: 28px auto 0;
+    margin: 28px auto 40px;
     padding-top: 20px;
     background:url("../images/reg-background.png") no-repeat -16px -2px;
     text-align: center;
@@ -196,71 +197,7 @@ h4 {
 .courses li.last-child {
     clear: right;
 }
-.fb-like-box {
-    float: left;
-    padding-top: 20px;
-}
-a.certificates {
-    display: block;
-    overflow: hidden;
-    height: 214px;
-    width: 276px;
-    margin: 0 auto;
-    background: url("../images/certificates.png") no-repeat top left;
-    text-indent: -9999px;
-}
-.sponsors {
-    float: right;
-    height: 214px;
-    width: 276px;
-    text-align: center;
-    padding-bottom: 60px;
-}
-.sponsors h3 {
-    margin: 11px 0 0;
-    font-size: 16px;
-    letter-spacing: 8px;
-}
-.sponsors li {
-    overflow: hidden;
-    display: inline-block;
-    margin: 20px 10px 0;
-    background: url("../images/sponsors.png") top left no-repeat;
-}
-.sponsors li:hover {
-    background: url("../images/sponsors-hover.png") top left no-repeat;
-}
-.sponsors li.evangelia {
-    width: 69px;
-    height: 54px;
-    background-position: -10px -10px;
-}
-.sponsors li.o {
-    width: 59px;
-    height: 47px;
-    background-position: -10px -74px;
-}
-.sponsors li.y {
-    width: 59px;
-    height: 44px;
-    background-position: -10px -131px;
-}
-.sponsors li.s {
-    width: 44px;
-    height: 44px;
-    background-position: -10px -185px;
-}
-.sponsors li.moc {
-    width: 72px;
-    height: 39px;
-    background-position: -10px -239px;
-}
-.sponsors li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-indent: -9999px;
-}
+
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -270,23 +207,65 @@ a.certificates {
 /*----------------------------------------------------------------------------------*/
 #footer {
     clear: both;
-    min-height: 60px;
-    padding-top: 15px;
-    border-top: 1px solid #437183;
+    min-height: 370px;
 }
-#footer a {
+.vigets {
+    display: inline-block;
+    padding: 20px 0 60px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #437183;
+}
+.vigets>li {
+    display: inline-block;
+    height: 214px;
+    width: 276px;
+    margin: 0 10px;
+}
+.fb-like-box {
+    padding-top: 20px;
+}
+a.certificates {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.sponsors {
+    text-align: center;
+}
+.sponsors h3 {
+    font-size: 16px;
+    letter-spacing: 8px;
+}
+.sponsors li {
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px 0;
+    width: 75px;
+    height: 55px;
+}
+.sponsors li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -75px;
+}
+.sponsors li:hover a {
+    text-indent: 0;
+}
+#footer .nav a {
     font: bold 11px Arial, sans-serif;
     text-transform: uppercase;
     color: #396375;
 }
-#footer li {
+#footer .nav li {
     float: left;
     margin-left: 21px;
 }
-#footer li:first-child {
+#footer .nav li:first-child {
     margin: 0;
 }
-#footer li.active a, #footer li a:hover {
+#footer .nav li.active a, #footer .nav li a:hover {
     color: #E11D5C;
 }
 #footer span {
